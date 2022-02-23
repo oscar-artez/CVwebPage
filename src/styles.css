@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NavBar */
@@ -25,11 +26,12 @@ header{
 .ContainerTitle h1, h2, h5{
     margin-top: 3%;
     color: #fff;
+    font-weight: bold;
 }
 /* Section About me */
 
 .AboutmeSection{
-    background-color: #fff;
+  background-color: rgba(74, 206, 226, 0.7);
 }
 .ContainerFlex{
     display: flex;
@@ -44,7 +46,7 @@ width: 35%;
     border: 5px solid #193b85;
 }
 .ContainerImg img{
-    transform: translate3d(-20px, 20px, 10px);
+    transform: translate3d(-10px, 10px, 10px);
 }
 .labelAboutM{
     font-weight: bold;
@@ -66,6 +68,8 @@ width: 35%;
 .ContainerProgressSection{
   display: flex;
   padding-bottom: 5%;
+  background-color: rgb(40 49 50 / 23%);
+  margin-top: 5%;
 }
 /* dddd */
 
@@ -142,44 +146,7 @@ margin: 5% auto;
       left: unset;
   }
   /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #000;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #000;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #000;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #000 transparent transparent;
-  }
-  .right2::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #000;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #000 transparent transparent;
-  }
+
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -12px;
@@ -289,7 +256,7 @@ margin: 5% auto;
   }
 
   .SkillsSection, .LanguagesSection{
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
 /* progres skills */
@@ -317,4 +284,21 @@ margin: 5% auto;
 }
 .progress-bar{
   background-color: #006170;
+}
+
+element.style {
+  width: 100%;
+}
+.progress-bar {
+  background-color: #006170;
+}
+.progress-bar-animated {
+  -webkit-animation: 1s linear infinite progress-bar-stripes;
+  animation: 1s linear infinite progress-bar-stripes;
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(
+45deg
+,rgba(92, 167, 196, 0.301) 25%,transparent 25%,transparent 50%,rgba(92, 166, 196, 0.301) 50%,rgba(92, 166, 196, 0.301) 75%,transparent 75%,transparent);
 }

@@ -65,3 +65,10 @@
 
 // ///
 
+setTimeout(() => {
+	let progressBar = document.querySelectorAll('div.progress-bar');
+	for (let i = 0; i<progressBar.length; i++) {
+		progressBar[i].classList.remove("progress-bar-animated", "progress-bar-striped");
+	}
+
+}, 30000);
