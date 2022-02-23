@@ -16,7 +16,8 @@
 header{
     background-image: url(../assets/images/AdobeStock_164909094-scaled.jpeg);
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .ContainerTitle {
     padding: 2% 0 5% 12px;
@@ -28,7 +29,7 @@ header{
 /* Section About me */
 
 .AboutmeSection{
-    background-color: rgb(112, 105, 105);
+    background-color: #fff;
 }
 .ContainerFlex{
     display: flex;
@@ -48,31 +49,24 @@ width: 35%;
 .labelAboutM{
     font-weight: bold;
 }
-
-
-
-
-/* Responsive Phone */
-@media (max-width:457px)
-{
-    .ContainerFlex{
-    flex-direction: column;
+.SkillsSection h3{
+  padding-left: 2%;
+  text-align: center;
+  margin-bottom: 5%;
 }
-.ContainerPhoto, .ContainerAboutText {
-    width: 100%;
-    margin: 5% 0 0 0 ;
+.LanguagesSection h3{
+  padding-left: 2%;
+  text-align: center;
+  margin-bottom: 5%;
 }
-.ContainerImg {
-    width: 60%;
-    margin: 5% auto;
+.SkillsSection, .LanguagesSection{
+  width: 100%;
 }
 
-.ContainerAboutText {
-    padding: 10%;
+.ContainerProgressSection{
+  display: flex;
+  padding-bottom: 5%;
 }
-
-}
-
 /* dddd */
 
 
@@ -89,12 +83,15 @@ margin: 5% auto;
     margin: 0 auto;
   }
   
+  .content h4{
+    color: #fff;
+  }
   /* The actual timeline (the vertical ruler) */
   .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: grey;
+    background-color: #002e6f;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -125,8 +122,8 @@ margin: 5% auto;
     width: 25px;
     height: 25px;
     right: -13px;
-    background-color: blue;
-    border: 4px solid #FF9F55;
+    background-color: #006170;
+    border: 4px solid #00256f;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -193,7 +190,7 @@ margin: 5% auto;
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: grey;
+    background-color: #002e6f;
     position: relative;
     border-radius: 6px;
   }
@@ -205,10 +202,43 @@ margin: 5% auto;
       font-size: 15px;
       text-align: center;
   }
-  
+
+
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
+    .ContainerProgressSection{
+      display: flex;
+      flex-direction: column;
+    }
+    .ContainerFlex{
+      flex-direction: column;
+  }
+  .ContainerPhoto, .ContainerAboutText {
+      width: 100%;
+      margin: 5% 0 0 0 ;
+  }
+  .ContainerImg {
+      width: 60%;
+      margin: 5% auto;
+  }
+  
+  .ContainerAboutText {
+      padding: 10%;
+  }
+  
 
+    .FlexContainerXP {
+      display: flex;
+      flex-direction: column;
+  }
+  .FlexReverse{
+    flex-direction: column-reverse;
+  }
+  .ContainerText{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+  }
     .content{
         margin-top: 10%;
     }
@@ -247,12 +277,27 @@ margin: 5% auto;
     .right2 {
         left: 0%;
       }
+      .SkillsSection h3{
+        font-size: 15px;
+      }
+      .LanguagesSection h3{
+        font-size: 15px;
+      }
+      .TextoTrabajo{
+        font-size: 15px;
+      }
   }
+
+  .SkillsSection, .LanguagesSection{
+    margin-top: 10%;
+  }
+
 /* progres skills */
 .ContainerProgressSkills{
     width: 100%;
     display: flex;    
     flex-wrap: wrap;
+    justify-content: center;
 }
 .progress{
     margin: 2%;
@@ -269,4 +314,7 @@ margin: 5% auto;
   font-size: .75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
+}
+.progress-bar{
+  background-color: #006170;
 }
