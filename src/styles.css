@@ -173,6 +173,9 @@ margin: 5% auto;
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
+    html, body{
+      overflow-x: hidden;
+    }
     .ContainerProgressSection{
       display: flex;
       flex-direction: column;
@@ -302,3 +305,20 @@ element.style {
 45deg
 ,rgba(92, 167, 196, 0.301) 25%,transparent 25%,transparent 50%,rgba(92, 166, 196, 0.301) 50%,rgba(92, 166, 196, 0.301) 75%,transparent 75%,transparent);
 }
+@media screen and (max-width: 450px){
+.content{
+  margin-top: 12%;
+}
+.left::after, .right::after {
+  left: 46.8%;
+}
+.right2::after {
+  left:  46.8%;
+}
+}
+@media screen and (max-width: 385px){
+  .content{
+    margin-top: 15%;
+  }
+
+  }
