@@ -1,0 +1,12 @@
+{
+    "name": "#CVOscarVazquez",
+    "short_name": "#CVOscarVazquez",
+    "description":"Bienvenidos a mi CV.",
+    "background_color": "#002e6f",
+    "theme_color": "#006170",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "./?utm_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es-MX"
+}

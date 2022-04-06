@@ -63,7 +63,7 @@
  // Start the typing effect on load
  _INTERVAL_VAL = setInterval(Type, 100);
 
-// ///
+// Timeout Progressbar after 30 seconds  //
 
 setTimeout(() => {
 	let progressBar = document.querySelectorAll('div.progress-bar');
@@ -72,3 +72,10 @@ setTimeout(() => {
 	}
 
 }, 30000);
+
+
+if('serviceWorker'in navigator){
+	navigator.serviceWorker.register('./src/sw.js')
+	.then(reg => console.log('registro de service worker exitoso', reg))
+	.catch(err => console.warn('Error al tratar de registrar Service worker', err))
+}
